@@ -1,7 +1,7 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(CivL.Startup))]
+[assembly: OwinStartup(typeof(CivL.Startup))]
 namespace CivL
 {
     public partial class Startup

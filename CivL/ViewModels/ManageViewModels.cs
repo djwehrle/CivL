@@ -1,9 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 
-namespace CivL.Models
+namespace CivL.ViewModels
 {
     public class IndexViewModel
     {
