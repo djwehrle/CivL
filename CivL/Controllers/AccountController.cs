@@ -7,16 +7,13 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using CivL.Models;
-using CivL.ViewModels;
+using CivL.ViewModels.Account;
 
 namespace CivL.Controllers
 {
     [Authorize]
     public class AccountController : Controller
     {
-        private ApplicationSignInManager _signInManager;
-        private ApplicationUserManager _userManager;
-
         public AccountController()
         {
         }
@@ -480,5 +477,8 @@ namespace CivL.Controllers
             }
         }
         #endregion
+
+        private ApplicationSignInManager _signInManager;
+        private ApplicationUserManager _userManager;
     }
 }

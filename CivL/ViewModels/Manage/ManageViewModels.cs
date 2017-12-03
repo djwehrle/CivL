@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 
-namespace CivL.ViewModels
+namespace CivL.ViewModels.Manage
 {
     public class IndexViewModel
     {

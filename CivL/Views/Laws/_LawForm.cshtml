@@ -1,0 +1,28 @@
+﻿@model CivL.Models.Law
+
+<form class="form-horizontal" method="post">
+
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(m => m.ID)
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Name, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Name)
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Text, new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextAreaFor(m => m.Text, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Text)
+        </div>
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Save</button>
+        <a class="btn btn-default" href="~/Laws">Cancel</a>
+    </div>
+</form>

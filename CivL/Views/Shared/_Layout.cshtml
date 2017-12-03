@@ -7,7 +7,7 @@
 
     <title>@ViewBag.Title - CivL</title>
 
-    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/bundle")
     @RenderSection("styles", required: false)
 
     @Scripts.Render("~/bundles/modernizr")
@@ -25,22 +25,23 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Laws", "Index", "Laws")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
     <div class="container body-content">
-        @RenderBody()
+        <main>
+            @RenderBody()
+        </main>
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - CivL</p>
+            <p class="pull-right">&copy; @DateTime.Now.Year - CivL</p>
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/core")
     @RenderSection("scripts", required: false)
 </body>
 </html>

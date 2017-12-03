@@ -57,7 +57,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IdentityModels.cs" />
+    <Compile Include="ApplicationUser.cs" />
+    <Compile Include="CivLDbContext.cs" />
+    <Compile Include="CivLIdentityDbContext.cs" />
+    <Compile Include="Law.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
